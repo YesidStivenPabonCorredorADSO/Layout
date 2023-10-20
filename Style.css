@@ -14,7 +14,7 @@
 
 .header{
     width: 100%;
-    height: 60px;
+    height:60px;
     grid-area: head;
     background-color: blue;
 }
@@ -60,5 +60,98 @@
         'nav nav'
         'main main ';
     }
+}
+.header__contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.header__contenedor--img-input{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+}
+.header__contenedor--link{
+    margin: 10px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__logo{
+    display: flex;
+    margin: 5px;
+    height: 100%;
+    width: 100px;
+}
+.header__input{
+    margin-bottom: 60px;
+    display: flex;
+    height: 40px;
+    width: 300px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.header__link{
+    font-size: 15px;
+    color: white;
+    text-decoration:none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+.header__link1{
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    border:1px  solid black;
+    border-radius: 5px;
+    color: white;
+    text-decoration:none;
+    padding: 10px 10px 10px 10px;
 
+}
+.header__link:hover{
+    text-decoration: underline;
+    background-color: grey;
+}
+.header__link1:hover{
+    text-decoration: underline;
+    background-color: red;
+
+}
+@media(max-width:425px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        'nav'
+        'main';
+    }
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    .header__contenedor{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .header__contenedor--img-input{
+
+    }
+    .header__logo{
+
+    }
+    .header__input{
+        display: none;
+    }
+    .header__link{
+        display: none;
+    }
 }
