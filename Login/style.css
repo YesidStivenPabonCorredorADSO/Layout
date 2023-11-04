@@ -73,7 +73,10 @@ body{
     border-radius: var(--radius);
     cursor: pointer;
 }
-
+.Header__img{
+    width: 50px;
+    height: 50px;
+}
 .Header__Search{
     width: 350px;
     background: var(--color-transparent);
@@ -154,7 +157,7 @@ body{
 .Contenedor__Caja{
     width: 400px;
     height: 580px;
-    background: var(--color-1);
+    background: rgb(100, 202, 211);
     border: var(--color-6) solid 2px;
 }
 
