@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-1: rgb(0, 0, 0);
+    --color-2: #4c4747;
+    --color-3: rgb(255, 255, 255);
+    --color-4: #a3a3a3;
+    --color-5: #a29ad9;
+    --color-6: #a3a3a3ad;
+    --color-7: #ffffff;
+    --color-8: #e2e0ec;
+    --color-9: #a3a3a3;
+
+    --font-open-sans: "Open Sans", sans-serif;
+    --radius_1: 5px;
+    --radius: 0.4rem;
+    --bg-gray: #404040;
+    --color-gray-suave:#c6b9b9;
+    --color-white: #ffffff;
+    --color-black: black;
+    --color-beisge:  #eeecdd;
+    --color-botons:  #3c74da;
+    --primary:#3a238e;
+    --color-hover: #7f6dc1;
+    --color-transparent: transparent;
+    --size-0-02: 0.2rem;
+    --size-0-75: 0.75rem;
+    --size-1: 1rem;
+    --size_1-3: 1.3rem;
+    --size-1-5: 1.5rem;
+    --size-2: 2rem;
+}
+
+body{
+    font-family: var(--font-open-sans);
+    background: var(--color-beisge);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado */
+.Header{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-white);
+}
+.Header__Box{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Header__Hamburguer{
+    display: none;
+    position: absolute;
+    color: transparent;
+}
+.Header__Nav-icon{
+    display: flex;
+    align-items: center;
+}
+.Header__Icon {
+    height:30px;    
+    width: 40px;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+.Header__Search{
+    width: 350px;
+    background: var(--color-transparent);
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: var(--radius);
+    border: 1px solid var(--bg-gray);
+}
+.Header__Search--edit, .Header__Navbar--edit, .Header__Button--edit{
+    display: none;
+}
+.Header__Navbar{
+    background: var(--color-transparent);
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    height: 37px;
+    width: 100%;
+    padding-left: 5px;
+    color: var(--color-white);
+}
+.Header__Box--edit{
+    display: flex;
+    align-items: center;
+}
+.Header__Button{
+    font-size: 1.5rem;
+    color: var(--color-black);
+    cursor: pointer;
+    margin-right: 10px;
+    background: transparent;
+    border: 0;
+}
+
+.Header__Login{
+    color: var(--color-gray);
+    height: 40px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: var(--size-05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Header__Login:hover{
+    border: var(--primary) solid 1px;
+    color: var(--primary);
+}
+.Header__Register{
+    color: var(--primary);
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    padding: var(--radius);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: bold;
+    height: 40px;
+}
+.Header__Register:hover{
+    background: var(--primary);
+    color: var(--color-beisge);
+}
+
+/* Pagina register */
+
+.Contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Contenedor__Caja{
+    width: 400px;
+    height: 580px;
+    background: var(--color-1);
+    border: var(--color-6) solid 2px;
+}
+
+.Contenedor__Titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    color:var(--color-7);
+}
+.Contenedor__Formato{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 15px;
+    
+}
+.Contenedor__input{
+    border: var(--color-4) solid 2px;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: px;
+    padding-left: 8px;
+}
+.Contenedor__Botones_inferiores{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.Contenedor__Boton_izquierda{
+    background: rgb(67, 144, 151);
+    padding: 8px;
+    border: solid var(--color-8) 2px;
+    border-radius: 10px;
+}
+.Contenedor__Validar{
+    text-decoration: none;
+    color: var(--color-8) ;
+}
+.Contenedor__Boton_derecho{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: var(--color-9);
+}
+
+/* Pagina Login */
+.Contenedor--login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Contenedor__Caja--login{
+    width: 350px;
+    height: 380px;
+    background: rgb(103, 205, 218);
+    border: var(--color-6) solid 2px;
+}
+.Contenedor__Titulo--login{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color:var(--color-7);
+}
+.Contenedor__Botones_inferiores--login{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.Contenedor__Validar--login{
+    text-decoration: none;
+}
+.Contenedor__Boton_derecho--login{
+    color: var(--color-7);
+}
+.Contenedor__Rayas{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none   
+}
+.Contenedor__Boton_final{
+    display: flex;
+    justify-content: center;
+    color: var(--color-7);
+    margin-top: 10px;
+}
+/* Contenido pagina olvido su contraseña */
+.Contenedor__Caja--recuperar{
+    height: 260px;
+}
+.Contenedor__Titulo--recuperar{
+    margin-top: 45px;
+}
+
+
+
+
+@media (max-width: 1800px){
+    .Header__Box{
+        width: 70%;
+    }
+}
+@media (max-width: 1700px){
+    .Header__Box{
+        width: 75%;
+    }
+}
+@media (max-width: 1600px){
+    .Header__Box{
+        width: 80%;
+    }
+}
+@media (max-width: 1500px){
+    .Header__Box{
+        width: 85%;
+    }
+}
+@media (max-width: 1400px){
+    .Header__Box{
+        width: 90%;
+    }
+}
+@media (max-width: 1300px){
+    .Header__Box{
+        width: 95%;
+    }
+}
+@media (max-width: 1030px) {
+    .Header__Box{
+        width: 98%;
+    }
+  }
+
+
+@media(max-width:750px){
+    .Header__Login, .Header__Navbar, .Header__Search, aside,  .Header__Search--edit {
+        display: none;
+    }
+    .Header__Hamburguer{
+        display: block;
+        font-size: var(--size-0-75);
+        color: var(--color-black);
+        position: relative;
+        top: 5px;
+        margin-left:10px;
+        margin-right:20px;
+    }
+    .Header__Box--edit{
+        display: flex;
+    }
+    .Header__Search--edit {
+        display: flex;
+        border: 0;
+    }
+    .Header__Button--edit{
+        background: transparent;
+        border: 0;
+        margin-right: 10px;
+    }
+}
